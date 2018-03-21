@@ -8,10 +8,11 @@
   <style>
 
     body {
-      font-size: 16px;
+      font-size: 12px;
       font-family: europa, ff-nuvo-web-pro, sans-serif;
       font-style: normal;
       font-weight: 400;
+      line-height: 1.25;
     }
 
     * {
@@ -21,6 +22,14 @@
     h1, h2, h3, h4, h5, h6 {
       font-size: 1em;
       margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .column h1, .column h2, .column h3, .column h4, .column h5, .column h6 {
+      margin-bottom: 0.5em;
+    }
+
+    .column-item h1, .column-item h2, .column-item h3, .column-item h4, .column-item h5, .column-item h6 {
       margin-bottom: 0;
     }
 
@@ -47,7 +56,7 @@
       border-radius: 5px;
       color: white;
       padding: 3px;
-      margin: 3px;
+      margin: 3px 0 3px 0;
     }
 
     .body-pill {
@@ -79,15 +88,29 @@
     }
 
     .column {
-      margin-left: 150px;
+      /*margin-left: 100px;*/
     }
 
     .column-item {
-      margin-left: -150px;
-      max-width: 130px;
-      position: absolute;
+      margin-left: -18%;
+      /*max-width: 100px;*/
+      width: 18%;
+      /*position: absolute;*/
       text-transform: uppercase;
+      /*display: inline-block;*/
+      /*padding-right: 10px;*/
     }
+
+    .section {
+      margin-bottom: 2em;
+      /*width: 85%;*/
+      margin-left: 18%;
+    }
+
+    .column-body {
+      margin-top: -1.25em;
+    }
+
 
     .center {
       text-align: center;
@@ -127,10 +150,6 @@
       border-left: solid 1px black;
     }
 
-    .section {
-      margin-bottom: 2em;
-    }
-
     @media print {
       .screen-only {
         display: none;
@@ -142,6 +161,11 @@
       margin: auto;
     }
 
+    p {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+
   </style>
 </head>
 <body>
@@ -149,7 +173,7 @@
   <div class='container'>
 
     <h1 class='center main-title'>Patrick King</h1>
-    <p class='center'>Full-stack web developer in Ruby on Rails + React</p>
+    <p class='center'>Full-stack web developer in Ruby on Rails + React + Node.js</p>
 
     <p class='center screen-only'><a href='Patrick_King_Resume_2018.pdf'>Resume PDF</a></p>
 
@@ -174,398 +198,433 @@
 
     <div class='clearfix'></div>
 
+    <br/>
+
     <div class='column'>
 
       <div class='section'>
-        <h2 class='column-item'>Objective</h2>
-
-        <p>Further my breadth and depth of skills in server and client development, and expand into cloud and devops.</p>
+        <div class='column-item'>
+          <h2>Objective</h2>
+        </div>
+        <div class='column-body'>
+          <p>Further my breadth and depth of skills in server and client development, and expand into cloud and devops.</p>
+        </div>
       </div>
-
-      <div class='section'>
-        <h2 class='column-item'>Experience</h2>
-        
-        <span class="italic">
-          <span class="bold">Software Developer</span> - VizworX Inc. - March 2013 to Present
-        </span>
-
-
-
-
-
-        <p>
-          <span class="italic">
-            Unreleased NEB Data Visualization - 2017 to 2018
-          </span>
-          <span class='pill body-pill'>React.js</span>
-          <span class='pill body-pill'>Immutable.js</span>
-          <span class='pill body-pill'>Redux.js</span>
-          <span class='pill body-pill'>Webpack</span>
-          <span class='pill body-pill'>IIS</span>
-
-        </p>
-        <p>
-          <span class="italic">Role: Consulting Developer. </span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-        <p>
-          <span class="italic">
-            <a href='https://apps2.neb-one.gc.ca/pipeline-incidents'>Pipeline Incidents</a>
-            <a href='https://github.com/NEBGitHub/incidents-pipeliniers_pipeline-incidents'>(Github)</a>
-            2017
-          </span>
-          <span class='pill body-pill'>React.js</span>
-          <span class='pill body-pill'>Immutable.js</span>
-          <span class='pill body-pill'>Redux.js</span>
-          <span class='pill body-pill'>Webpack</span>
-          <span class='pill body-pill'>IIS</span>
-          <span class='pill body-pill'>Node.js</span>
-        </p>
-        <p>
-          <span class="italic">Role: Lead Developer</span>
-          
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-
-        <p>
-          <span class="italic">
-            <a href='https://apps2.neb-one.gc.ca/dvs'>Exploring Canada's Energy Future</a>
-            <a href='https://github.com/NEBGitHub/energy-futures-vis-avenir-energetique'>(Github)</a>
-            2016 - 2017
-          </span>
-          <span class='pill body-pill'>Coffeescript</span>
-          <span class='pill body-pill'>Browserify</span>
-          <span class='pill body-pill'>D3.js</span>
-          <span class='pill body-pill'>Node.js</span>
-          <span class='pill body-pill'>IIS</span>
-          <span class='pill body-pill'>Phantom.js</span>
-        </p>
-        <p>
-          <span class="italic">Role: Lead Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-        <p>
-          <span class="italic">Ivrnet Central - 2016</span>
-          <span class='pill body-pill'>Ruby on Rails</span>
-          <span class='pill body-pill'>Rspec</span>
-          <span class='pill body-pill'>Docker</span>
-          <span class='pill body-pill'>Postgres SQL</span>
-        </p>
-        <p>
-          <span class="italic">Role: Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-        <p>
-          <span class="italic">Geoviz - 2015 to 2016</span>
-          <span class='pill body-pill'>React.js</span>
-          <span class='pill body-pill'>Flux.js</span>
-          <span class='pill body-pill'>Leaflet</span>
-          <span class='pill body-pill'>Node.js</span>
-          <span class='pill body-pill'>Objective-C + iOS</span>
-          <span class='pill body-pill'>C# + WPF</span>
-          <span class='pill body-pill'>ArcGIS Server + SDKs</span>
-        </p>
-        <p>
-          <span class="italic">Role: Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-
-        <p>
-          <span class="italic">WeEmploy - 2014</span>
-          <span class='pill body-pill'>Ruby on Rails</span>
-          <span class='pill body-pill'>Postgres SQL</span>
-          <span class='pill body-pill'>Rspec</span>
-          <span class='pill body-pill'>Sunspot Solr + Lucene</span>
-
-        </p>
-        <p>
-          <span class="italic">Role: Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-
-        <p>
-          <span class="italic">Jobbsite - 2013 to 2015</span>
-          <span class='pill body-pill'>Ruby on Rails</span>
-          <span class='pill body-pill'>Postgres SQL</span>
-          <span class='pill body-pill'>Rspec</span>
-          <span class='pill body-pill'>Cucumber</span>
-          <span class='pill body-pill'>Phantom.js</span>
-          <span class='pill body-pill'>Selenium</span>
-          <span class='pill body-pill'>Paperclip</span>
-          <span class='pill body-pill'>Prawn</span>
-        </p>
-        <p>
-          <span class="italic">Role: Developer.</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-        <span class="italic">
-          <span class="bold">Research Assistant</span> - Agile Software Engineering Lab, University of Calgary (Dr. Frank Maurer) - May 2011 to February 2013
-        </span>
-
-
-        <p>
-          <span class="italic"><a href='https://web.archive.org/web/20161018145710/http://nserc-surfnet.ca/projects'>NSERC Surfnet Research Network Page</a> - 2013</span>
-          <span class='pill body-pill'>Ruby on Rails</span>
-          <span class='pill body-pill'>Postgres SQL</span>
-          <span class='pill body-pill'>Paperclip</span>
-        </p>
-        <p>
-          <span class="italic">Role: Lead Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-        <p>
-          <span class="italic">Multi-Surface Environment API - 2012</span>
-          <span class='pill body-pill'>C# + WPF</span>
-          <span class='pill body-pill'>Kinect</span>
-          <span class='pill body-pill'>Node.js</span>
-          <span class='pill body-pill'>Objective-C + iOS</span>
-        </p>
-        <p>
-          <span class="italic">Role: Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-        <p>
-          <span class="italic">MRI Table Kinect - 2012</span>
-          <span class='pill body-pill'>C# + WPF</span>
-          <span class='pill body-pill'>Kinect</span>
-          <span class='pill body-pill'>Objective-C + iOS</span>
-        </p>
-        <p>
-          <span class="italic">Role: Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-          Resulted in a <a href='http://ase.cpsc.ucalgary.ca/uploads/Publications/2013/MediCHI2013%20-%20MRITable%20Kinect.pdf'> publication.</a>
-        </p>
-
-
-<!--         <p>
-          <span class="italic">TableNOC - 2011</span>
-          <span class='pill body-pill'>C# + WPF</span>
-          <span class='pill body-pill'>MySQL</span>
-          <span class='pill body-pill'>ArcGIS C# SDK</span>
-        </p>
-        <p>
-          <span class="italic">Role: Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p> -->
-
-
-        <p>
-          <span class="italic">eGrid - 2011</span>
-          <span class='pill body-pill'>C# + WPF</span>
-          <span class='pill body-pill'>ArcGIS C# SDK</span>
-        </p>
-        <p>
-          <span class="italic">Role: Developer</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-
-
-
-
-
-
-
-        <span class="italic">
-          <span class="bold">Student Researcher</span> - University of Calgary iGEM Team - May to August 2009
-          <span class='pill body-pill'>LSL (Second Life)</span>
-        <p>
-          <span class="italic"><a href='http://2009.igem.org/Team:Calgary/Second_Life'>Synthetic Biology Interactive (Second Life Installation)</a> </span>
-        </p>
-        <p>
-          <span class="italic">Role: Team Leader.</span>
-        </p>
-        <p>
-          <span class="italic">Challenges:</span>
-        </p>
-        </span>
-
-
-      </div>
-
-      <div class='section'>
-        <h2 class='column-item'>Education</h2>
-
-        <span class="bold">BHSc</span> - 
-        <span class="italic">Bioinformatics (Honours) - University of Calgary - 2012</span>
-        Honours Thesis:
-        <span class='italic'>An Algorithm for Chromatin Immunoprecipitation Sequencing Analysis.</span>
-        <span class='pill body-pill'>Python</span>
-        <span class='pill body-pill'>R</span>
-      </div>
-
+      <div class='clearfix'></div>
 
 
       <div class='section'>
+        <div class='column-item'>
+          <h2>Experience</h2>
+        </div>
 
-        <h2 class='column-item'>Skills + Tech</h2>
+        <div class='column-body'>
 
-        <h3>What I'm Best At</h3>
-        <p>
-          <span class='pill best-pill'>React.js</span>
-          The low-to-no-state and continuous re-rendering approach that React encourages for building complex UIs was eye opening when I first encountered it, and now it feels wrong to build UIs in any other way. React is one of those rare tools which changes the way you think about development.
-        </p>
-        <p>
-          <span class='pill best-pill'>Node.js</span>
-          I began working with Node after several solid years with Rails, and the ease with which you can build a simple working server in Node impressed me. Promises (and asnyc/await) were good to learn too, but Node will never be my first choice for server development; Javascript has too many flaws as a language (as compared to say, Ruby) and Rails makes a lot of good choices for you by default.
-        </p>
-        <p>
-          <span class='pill best-pill'>Ruby on Rails</span>
-          <span class='pill best-pill'>RSpec</span>
-          <span class='pill best-pill'>Cucumber</span>
-          The convention based layout of every Rails app is both its best and worst feature. Portable conventions are a huge aid to understanding a new app, I've been productive contributing to a substantial Rails app on day one after getting to the code. But Rails doesn't set you up very well to scale an app's size and complexity, it naturally encourages monolithic apps. Careful use of Ruby's excellent object orientation features is the way out.
-        </p>
+          <h2 class="bold">
+            VizworX Inc. - March 2013 to Present
+          </h2>
 
-        <p>
-          <span class='pill best-pill'>Javascript (ES 2015+)</span>
-          <span class='pill best-pill'>ESLint</span>
-          Modern Javascript has grown into a more pleasant and powerful language. Despite all the new and useful features I use daily (modules, arrow functions, deconstruction assignments, classes), there are still numerous new features I haven't needed to tap into yet. I list JS together with a linting tool, because there are enough serious gotchas in the language that using a linter takes on the same importance as compiler checks in other languages. Some go further, using tools like Flow, React's proptypes, or languages like Typescript for stronger static checks. 
-        </p>
+          <p>
+            <span class="italic">
+              Unreleased NEB Data Visualization - 2017 to 2018
+            </span>
+          </p>
+          <p>
+            <span class='pill body-pill'>React.js</span>
+            <span class='pill body-pill'>Immutable.js</span>
+            <span class='pill body-pill'>Redux.js</span>
+            <span class='pill body-pill'>Webpack</span>
+            <span class='pill body-pill'>IIS</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Consulting Developer - Challenges:</span>
+            While transitioning out of the company, I bootstrapped this new visualization and assisted with scoping and estimation before handing it off to the team. The main challenge was to offload and document all of the knowledge I had built up of the client and our projects. Keeping up with code review also became interesting, as I was no longer the author of any of code, and had less frequent contact with the team over time.
+          </p>
 
-        <p>
-          <span class='pill best-pill'>Coffeescript</span>
-          Rails introduced me to Coffeescript, and I was instantly sold on its clean syntax, indentation based scopes, and effort to reduce/eliminate "the bad parts" of Javascript. Less code is better code! Modern JS is the better choice for professional work, but I still enjoy writing my personal projects in Coffeescript.
-        </p>
-        <p>
-          <span class='pill best-pill'>Immutable.js</span>
-          Immutable lets you build efficient, un-changeable data structures in Javascript. I had long heard the virtues of using immutable structures to drive apps but expected it to be challenging to use them, and I was pleasantly surprised just how flexible this library turned out to be. Immutable is easy to recommend for React projects of any complexity, and now I wish Javascript had a native ordered map type like the one Immutable provides.
-        </p>
-        <p>
-          <span class='pill best-pill'>Redux + Mobx + Flux</span>
-          I lump these three tools together because they all address the same problem in similar ways: managing state for React apps. Creating a centralized store for an application's state and enforcing that it only change through actions submitted to the store is a great way to bring order to the chaos of an interactive UI, but it can result in components that are not very modular if used carelessly.
-        </p>
-        <p>
-          <span class='pill best-pill'>Git (CLI + Git Flow)</span>
-          Git is a wonderful tool. I've always preferred the CLI over graphical tools, sooner or later your repository will get into a state that the GUI tool can't handle. At that point your only option is to sort it out at the console, so I reason that you might as well learn "the real interface" from the start. A personal favourite utility: gitk, a cross-platform graphical git history viewer. It's a little quirky, but blazing fast, supports most options that `git log` takes for searching/filtering commits, and works identically on Mac/Win/Linux.
-        </p>
 
-        <p>
-          <span class='pill best-pill'>D3.js</span>
-          I began working with the D3 charting library after becoming familiar with React, and I would describe it as a middle point between React and jQuery. Like jQuery it targets parts of the DOM with selectors, and like React it permits you to map from data structures to DOM elements and hides some of the complexity of updating the DOM. D3 is fine for the occasional chart with a few simple interactions, but it has most of jQuery's problems when building complex applications.
-        </p>
-        <p>
-          <span class='pill best-pill'>Agile practices</span>
-          Daily stand-ups, one week sprints, short weekly sprint planning meetings with JIRA tickets, extensive unit-testing, chat-ops, and the occasional pair programming session have been my way of life as a professional developer. I drove adoption of code review at VizworX on a project I lead, and was pleased to see colleagues on other projects adopt it too. Continuous integration is a great idea, but there is a maintenance cost to keep it online, my impression is that it only becomes worthwhile for teams larger than three or four developers.
-        </p>
-
-        <span class='pill best-pill'>jQuery</span>
-        <span class='pill best-pill'>Promises + Bluebird.js</span>
+          <p>
+            <span class="italic">
+              <a href='https://apps2.neb-one.gc.ca/pipeline-incidents'>Pipeline Incidents</a> (NEB)
+              <a href='https://github.com/NEBGitHub/incidents-pipeliniers_pipeline-incidents'>(Github)</a>
+              2017
+            </span>
+          </p>
+          <p>
+            <span class='pill body-pill'>React.js</span>
+            <span class='pill body-pill'>Immutable.js</span>
+            <span class='pill body-pill'>Redux.js</span>
+            <span class='pill body-pill'>Webpack</span>
+            <span class='pill body-pill'>IIS</span>
+            <span class='pill body-pill'>Node.js</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Lead Developer - Challenges:</span>
+            I onboarded a new junior developer, while transitioning the team to a new React based stack, while delivering a very complex browser data visualization app under a very tight deadline. My organizational skills, time management, client interfacing and detail orientation were tested on this project! We delivered the app successfully and on time, after resorting to a limited amount of overtime. I lead the adoption of code review as a practice at Vizworx during this project.
+          </p>
 
 
 
-        <h3>What I'm Good At</h3>
-        <span class='pill good-pill'>Webpack</span>
-        <span class='pill good-pill'>Postgres SQL</span>
-        <span class='pill good-pill'>IIS</span>
-        <span class='pill good-pill'>Phantom.js</span>
-        <span class='pill good-pill'>Python</span>
-        <span class='pill good-pill'>C# + .NET (Web and Windows desktop)</span>
-        <span class='pill good-pill'>WebGL + Three.js</span>
-        <span class='pill good-pill'>Team Foundation Version Control (TFS)</span>
-        <span class='pill good-pill'>ArcGIS (APIs + SDKs + server configuration)</span>
-        <span class='pill good-pill'>Leaflet</span>
-        <span class='pill good-pill'>Browserify</span>
-        <span class='pill good-pill'>Heroku</span>
-        <span class='pill play-pill'>Prawn</span>
-        <span class='pill good-pill'>French</span>
+          <p>
+            <span class="italic">
+              <a href='https://apps2.neb-one.gc.ca/dvs'>Exploring Canada's Energy Future</a> (NEB)
+              <a href='https://github.com/NEBGitHub/energy-futures-vis-avenir-energetique'>(Github)</a>
+              - 2016 to 2017
+            </span>
+          </p>
+          <p>
+            <span class='pill body-pill'>Coffeescript</span>
+            <span class='pill body-pill'>Browserify</span>
+            <span class='pill body-pill'>D3.js</span>
+            <span class='pill body-pill'>Node.js</span>
+            <span class='pill body-pill'>IIS</span>
+            <span class='pill body-pill'>Phantom.js</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Lead Developer - Challenges:</span>
+            I stepped into this project after it was already underway. As a pilot project for this client we had wide latitude in our choices of technology and approach, but we had to deliver this browser based visualization under tight deadlines and with limited access to the client's hosting environment. Challenges included building the app with tools not well suited to browser app development (D3 especially), integrating Node.js applications into an IIS hosting environment, and interfacing with an external design team and external client staff. The project teams moved fast but our partners were chiefly concerned with the design of the app, ensuring that essential features mentioned only in passing were discussed, captured, and scoped was also a challenge.
+          </p>
 
-        <h3>What I've Played With</h3>
-        <span class='pill play-pill'>Java + Android</span>
-        <span class='pill play-pill'>Objective-C + iOS</span>
-        <span class='pill play-pill'>Docker</span>
-        <span class='pill play-pill'>Sunspot Solr + Lucene</span>
-        <span class='pill play-pill'>R</span>
-        <span class='pill play-pill'>MongoDB</span>
-        <span class='pill play-pill'>Go</span>
-        <span class='pill play-pill'>Ember.js</span>
-        <span class='pill play-pill'>MSBuild</span>
-        <span class='pill play-pill'>Ampersand.js</span>
-        <span class='pill play-pill'>GLSL (with WebGL)</span>
-        <span class='pill play-pill'>Puppet</span>
-        <span class='pill play-pill'>Meteor.js</span>
-        <span class='pill play-pill'>LSL (Second Life)</span>
-        <span class='pill play-pill'>Drupal</span>
-        <span class='pill play-pill'>SQL Server (TSQL)</span>
-        <span class='pill play-pill'>C + C++</span>
-        <span class='pill play-pill'>Django</span>
-        <span class='pill play-pill'>Kinect</span>
-        <span class='pill play-pill'>Blender</span>
-        <span class='pill play-pill'>Selenium</span>
 
-        <br/>
+          <p>
+            <span class="italic">Ivrnet Central - 2016</span>
+          </p>
+          <p>
+            <span class='pill body-pill'>Ruby on Rails</span>
+            <span class='pill body-pill'>Rspec</span>
+            <span class='pill body-pill'>Docker</span>
+            <span class='pill body-pill'>Postgres SQL</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Developer - Challenges:</span>
+            This was a short engagement with another Calgary software company to support their development team; the main challenge was to drop into an unfamiliar Rails codebase and make worthwhile contributions during the six week span, while also learning the basics of Docker.
+          </p>
+
+
+          <p>
+            <span class="italic">Geoviz - 2015 to 2016</span>
+          </p>
+          <p>
+            <span class='pill body-pill'>React.js</span>
+            <span class='pill body-pill'>Flux.js</span>
+            <span class='pill body-pill'>Leaflet</span>
+            <span class='pill body-pill'>Node.js</span>
+            <span class='pill body-pill'>Objective-C + iOS</span>
+            <span class='pill body-pill'>C# + WPF</span>
+            <span class='pill body-pill'>ArcGIS Server + SDKs</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Developer - Challenges:</span>
+            Geoviz was a sprawling prototype project, with applications all communicating with each other on Windows hosts, iOS devices, servers, and in the browser. The essential challenge was keeping all of these platforms in sync as new features were added and communication protocols changed. Another notable challenge was implementing a React based mapping application at a time when adapters for Leaflet and Mapbox were at an early stage of development, or did not exist at all. Adapting DOM-state heavy and procedural tools like Leaflet to React's less stateful rendering approach was a challenge.
+          </p>
+
+
+
+          <p>
+            <span class="italic">WeEmploy - 2014</span>
+          </p>
+          <p>
+            <span class='pill body-pill'>Ruby on Rails</span>
+            <span class='pill body-pill'>Postgres SQL</span>
+            <span class='pill body-pill'>Rspec</span>
+            <span class='pill body-pill'>Sunspot Solr + Lucene</span>
+
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Developer - Challenges:</span>
+            The application concerned an online job board, and one notable challenge was designing a search system integrating Rails and Solr for matching candidates to jobs based on skills and other traits. The client brought their own design team with some ambitious ideas, which demanded solid client facing abilities and presented some interesting HTML/CSS implementation challenges.
+          </p>
+
+
+
+          <p>
+            <span class="italic">Jobbsite - 2013 to 2015</span>
+          </p>
+          <p>
+            <span class='pill body-pill'>Ruby on Rails</span>
+            <span class='pill body-pill'>Postgres SQL</span>
+            <span class='pill body-pill'>Rspec</span>
+            <span class='pill body-pill'>Cucumber</span>
+            <span class='pill body-pill'>Phantom.js</span>
+            <span class='pill body-pill'>Selenium</span>
+            <span class='pill body-pill'>Paperclip</span>
+            <span class='pill body-pill'>Prawn</span>
+            <span class='pill body-pill'>Ampersand.js</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Developer - Challenges:</span>
+            I began on Jobbsite as a junior developer working under a talented senior to build a custom time and order management system for a client, and ended as a leading developer on a larger team adapting the software to serve as a SAAS product. There were numerous challenges over the years, including onboarding additional junior devs, adding a rich client experience using a browser toolkit called Ampersand.js, the Rails 3 to 4 upgrade, a continuous need to optimize the speed of a sprawling test suite, balancing the needs of the client vs. the needs of the product, and implementing a reliable multi-tenant database system.
+          </p>
+
+
+          <h2 class="bold">
+            Agile Software Engineering Lab, University of Calgary (Dr. Frank Maurer) - May 2011 to February 2013
+          </h2>
+
+
+          <p>
+            <span class="italic"><a href='https://web.archive.org/web/20161018145710/http://nserc-surfnet.ca/projects'>NSERC Surfnet Research Network Page</a> - 2013</span>
+          </p>
+          <p>
+            <span class='pill body-pill'>Ruby on Rails</span>
+            <span class='pill body-pill'>Postgres SQL</span>
+            <span class='pill body-pill'>Paperclip</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Lead Developer - Challenges:</span>
+            My last task with Dr. Maurer's lab was to implement a website to document the work of the Surfnet research network, where network members could log in and upload descriptions and papers detailing their projects. This was my first Ruby on Rails project. Effectively, I attempted to learn Rails and implement a simple CMS on my own in two months, and in retrospect this goal was entirely too ambitious. Not knowing this at the time, I made a serious attempt to complete it. I learned a lot while building a substantial portion of the site, before handing it off to another intern.
+          </p>
+
+
+          <p>
+            <span class="italic">MRI Table Kinect - 2012</span>
+          </p>
+          <p>
+            <span class='pill body-pill'>C# + WPF</span>
+            <span class='pill body-pill'>Kinect</span>
+            <span class='pill body-pill'>Objective-C + iOS</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Developer - Challenges:</span>
+            Building off of MSE-API and working for a grad student in Dr. Maurer's lab, I built this prototype which synchronizes the display on a touch tabletop with an iPad by tracking the device with a Kinect. The main challenge was the short timeframe, the project came together in one week. The work resulted in a <a href='http://ase.cpsc.ucalgary.ca/uploads/Publications/2013/MediCHI2013%20-%20MRITable%20Kinect.pdf'> publication in MediCHI’13</a>. (Unfortunately, I did not get to go to the conference in Paris to present the work.)
+          </p>
+
+          <p>
+            <span class="italic">Multi-Surface Environment API - 2012</span>
+          </p>
+          <p>
+            <span class='pill body-pill'>C# + WPF</span>
+            <span class='pill body-pill'>Kinect</span>
+            <span class='pill body-pill'>Node.js</span>
+            <span class='pill body-pill'>Objective-C + iOS</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Developer - Challenges:</span>
+            As one developer in a team of six, we built a framework for cross device communication incorporating Kinect skeletal recognition and gestures on mobile devices. The main challenges included keeping codebases for different platforms in sync, and coordinating work between a medium size team of students and interns who had many other demands on their time. In and around work on this project, I started a drive within the lab to move our source control from an in-house TFS Version Control server to Github.
+          </p>
+
+
+
+
+          <!--         <p>
+            <span class="italic">TableNOC - 2011</span>
+            <span class='pill body-pill'>C# + WPF</span>
+            <span class='pill body-pill'>MySQL</span>
+            <span class='pill body-pill'>ArcGIS C# SDK</span>
+          </p>
+          <p>
+            <span class="italic">Role: Developer</span>
+          </p>
+          <p>
+            <span class="italic"> - Challenges:</span>
+          </p> -->
+
+
+          <p>
+            <span class="italic">eGrid - 2011</span>
+          </p>
+          <p>
+            <span class='pill body-pill'>C# + WPF</span>
+            <span class='pill body-pill'>ArcGIS C# SDK</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Developer - Challenges:</span>
+            eGrid was a prototype power grid management application, for tracking work crews and power equipment issues / outages citywide. The main challenge was diving into an existing codebase while learning C#, touch interface APIs, and GIS basics. eGrid ran on an early generation touch tabletop with early Microsoft touch software, both of which came with unique issues to work around.
+          </p>
+
+
+
+
+
+
+
+          <h2 class="bold">
+            University of Calgary iGEM Team - May to August 2009
+          </h2>
+          <p>
+            <span class="italic"><a href='http://2009.igem.org/Team:Calgary/Second_Life'>Synthetic Biology Interactive (Second Life Installation)</a> </span>
+          </p>
+          <p>
+            <span class='pill body-pill'>LSL (Second Life)</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Team Leader - Challenges:</span>
+            I lead a team of three other students to build a virtual installation in Second life, including two biomedical sciences students with no software development experience, mentoring and guiding these students in the basics of coding and 3D graphics was a key challenge. An interesting technical problem was working within the limited environment provided by Second Life's integrated Linden Scripting Language: each script is limited to 64kb of memory for compiled code and stack / heap memory. But as a garbage collected language LSL includes no way to manage memory directly. Adding a line of code to a script, or adding one too many elements to a list, could result in an out of memory error. Splitting functionality across multiple scripts allows access to more memory, but requires the addition of an IPC-like communication system over the game's chat channels.
+          </p>
+        </div>
       </div>
+      <div class='clearfix'></div>
 
 
       <div class='section'>
+        <div class='column-item'>
+          <h2>Education</h2>
+        </div>
 
-        <h2 class='column-item'>Other Works</h2>
+        <div class='column-body'>
 
-        <p>
-          <a href='http://gallery.patrickk.i.ng'>"Star Trek: Armada" Gallery</a>
-          <span>
-          - A shrine for an old computer game I enjoyed.
-          <span class='pill body-pill'>Coffeescript </span>
-          <span class='pill body-pill'>Node.js</span>
-          <span class='pill body-pill'>Three.js</span>
-          <span class='pill body-pill'>WebGL</span>
-          </span>
-        </p>
+          <span class="bold">BHSc</span> - 
+          <span class="italic">Bioinformatics (Honours) - University of Calgary - 2012</span>
+          <br/>
+          Honours Thesis:
+          <span class='italic'>An Algorithm for Chromatin Immunoprecipitation Sequencing Analysis.</span>
+          <span class='pill body-pill'>Python</span>
+          <span class='pill body-pill'>R</span>
 
-        <p>
-          <a href='https://hidden-wave-28675.herokuapp.com/dist/app.html'>Neoderelict</a>
-          <span>
-          - A simple prototype browser game.
-          <span class='pill body-pill'>Coffeescript </span>
-          <span class='pill body-pill'>Three.js</span>
-          <span class='pill body-pill'>WebGL</span>
-          <span class='pill body-pill'>Blender</span>
-          </span>
-        </p>
+        </div>
       </div>
+      <div class='clearfix'></div>
 
-    </div>
 
-    <p class='italic center'>Fluent in French and English - References available on request</p>
+      <div class='section'>
+        <div class='column-item'>
+          <h2>Skills + Tech</h2>
+        </div>
+
+        <div class='column-body'>
+
+          <h3>What I'm Best At</h3>
+          <p>
+            <span class='pill best-pill'>React.js</span>
+            The low-to-no-state and continuous re-rendering approach that React encourages for building complex UIs was eye opening when I first encountered it, and now it feels wrong to build UIs in any other way. React is one of those rare tools which changes the way you think about development.
+          </p>
+          <p>
+            <span class='pill best-pill'>Node.js</span>
+            I began working with Node after several solid years with Rails, and the ease with which you can build a simple working server in Node impressed me. Promises (and asnyc/await) were good to learn too, but Node will never be my first choice for server development; Javascript has too many flaws as a language (as compared to say, Ruby) and Rails makes a lot of good choices for you by default.
+          </p>
+          <p>
+            <span class='pill best-pill'>Ruby on Rails</span>
+            <span class='pill best-pill'>RSpec</span>
+            <span class='pill best-pill'>Cucumber</span>
+            The convention based layout of every Rails app is both its best and worst feature. Portable conventions are a huge aid to understanding a new app, I've been productive contributing to a substantial Rails app on day one after getting to the code. But Rails doesn't set you up very well to scale an app's size and complexity, it naturally encourages monolithic apps. Careful use of Ruby's excellent object orientation features is the way out.
+          </p>
+
+          <p>
+            <span class='pill best-pill'>Javascript (ES 2015+)</span>
+            <span class='pill best-pill'>ESLint</span>
+            Modern Javascript has grown into a more pleasant and powerful language. Despite all the new and useful features I use daily (modules, arrow functions, deconstruction assignments, classes), there are still numerous new features I haven't needed to tap into yet. I list JS together with a linting tool, because there are enough serious gotchas in the language that using a linter takes on the same importance as compiler checks in other languages. Some go further, using tools like Flow, React's proptypes, or languages like Typescript for stronger static checks. 
+          </p>
+
+          <p>
+            <span class='pill best-pill'>Coffeescript</span>
+            Rails introduced me to Coffeescript, and I was instantly sold on its clean syntax, indentation based scopes, and effort to reduce/eliminate "the bad parts" of Javascript. Less code is better code! Modern JS is the better choice for professional work, but I still enjoy writing my personal projects in Coffeescript.
+          </p>
+          <p>
+            <span class='pill best-pill'>Immutable.js</span>
+            Immutable lets you build efficient, un-changeable data structures in Javascript. I had long heard the virtues of using immutable structures to drive apps but expected it to be challenging to use them, and I was pleasantly surprised just how flexible this library turned out to be. Immutable is easy to recommend for React projects of any complexity, and now I wish Javascript had a native ordered map type like the one Immutable provides.
+          </p>
+          <p>
+            <span class='pill best-pill'>Redux + Mobx + Flux</span>
+            I lump these three tools together because they all address the same problem in similar ways: managing state for React apps. Creating a centralized store for an application's state and enforcing that it only change through actions submitted to the store is a great way to bring order to the chaos of an interactive UI, but it can result in components that are not very modular if used carelessly.
+          </p>
+          <p>
+            <span class='pill best-pill'>Git (CLI + Git Flow)</span>
+            Git is a wonderful tool. I've always preferred the CLI over graphical tools, sooner or later your repository will get into a state that the GUI tool can't handle. At that point your only option is to sort it out at the console, so I reason that you might as well learn "the real interface" from the start. A personal favourite utility: gitk, a cross-platform graphical git history viewer. It's a little quirky, but blazing fast, supports most options that `git log` takes for searching/filtering commits, and works identically on Mac/Win/Linux.
+          </p>
+
+          <p>
+            <span class='pill best-pill'>D3.js</span>
+            I began working with the D3 charting library after becoming familiar with React, and I would describe it as a middle point between React and jQuery. Like jQuery it targets parts of the DOM with selectors, and like React it permits you to map from data structures to DOM elements and hides some of the complexity of updating the DOM. D3 is fine for the occasional chart with a few simple interactions, but it has most of jQuery's problems when building complex applications.
+          </p>
+          <p>
+            <span class='pill best-pill'>Agile practices</span>
+            Daily stand-ups, one week sprints, short weekly sprint planning meetings with JIRA tickets, extensive unit-testing, chat-ops, and the occasional pair programming session have been my way of life as a professional developer. I drove adoption of code review at VizworX on a project I lead, and was pleased to see colleagues on other projects adopt it too. Continuous integration is a great idea, but there is a maintenance cost to keep it online, my impression is that it only becomes worthwhile for teams larger than three or four developers.
+          </p>
+
+          <span class='pill best-pill'>jQuery</span>
+          <span class='pill best-pill'>Promises + Bluebird.js</span>
+
+
+
+          <h3>What I'm Good At</h3>
+          <span class='pill good-pill'>Webpack</span>
+          <span class='pill good-pill'>Postgres SQL</span>
+          <span class='pill good-pill'>IIS</span>
+          <span class='pill good-pill'>Phantom.js</span>
+          <span class='pill good-pill'>Python</span>
+          <span class='pill good-pill'>C# + .NET (Web and Windows desktop)</span>
+          <span class='pill good-pill'>WebGL + Three.js</span>
+          <span class='pill good-pill'>Team Foundation Version Control (TFS)</span>
+          <span class='pill good-pill'>Leaflet</span>
+          <span class='pill good-pill'>Browserify</span>
+          <span class='pill good-pill'>Heroku</span>
+          <span class='pill good-pill'>ArcGIS (APIs + SDKs + server configuration)</span>
+          <span class='pill good-pill'>Prawn</span>
+          <span class='pill good-pill'>French (Written + Spoken)</span>
+
+          <h3>What I've Played With</h3>
+          <span class='pill play-pill'>Java + Android</span>
+          <span class='pill play-pill'>Objective-C + iOS</span>
+          <span class='pill play-pill'>Docker</span>
+          <span class='pill play-pill'>Sunspot Solr + Lucene</span>
+          <span class='pill play-pill'>R</span>
+          <span class='pill play-pill'>MongoDB</span>
+          <span class='pill play-pill'>Go</span>
+          <span class='pill play-pill'>Ember.js</span>
+          <span class='pill play-pill'>MSBuild</span>
+          <span class='pill play-pill'>Ampersand.js</span>
+          <span class='pill play-pill'>GLSL (with WebGL)</span>
+          <span class='pill play-pill'>Puppet</span>
+          <span class='pill play-pill'>Meteor.js</span>
+          <span class='pill play-pill'>LSL (Second Life)</span>
+          <span class='pill play-pill'>Drupal</span>
+          <span class='pill play-pill'>SQL Server (TSQL)</span>
+          <span class='pill play-pill'>C + C++</span>
+          <span class='pill play-pill'>Django</span>
+          <span class='pill play-pill'>Kinect</span>
+          <span class='pill play-pill'>Blender</span>
+          <span class='pill play-pill'>Selenium</span>
+
+          <br/>
+        </div>
+      </div>
+      <div class='clearfix'></div>
+
+
+      <div class='section'>
+        <div class='column-item'>
+          <h2>Other Works</h2>
+        </div>
+
+        <div class='column-body'>
+
+          <p>
+            Accessible Visualizations: A Case Study <a href='https://docs.google.com/presentation/d/1DqZJQQILjfYafysV29f-kdiitQ5ExCy-IOYz0IuUn78/edit?usp=sharing'>(slides)</a>
+            - I presented work on making the Energy Futures visualization accessible, as part of the our design partner's <a href="http://speakerseries.ilab.cpsc.ucalgary.ca/"> Data Empowerment Speaker Series</a>.
+          </p>
+
+          <p>
+            <a href='http://gallery.patrickk.i.ng'>"Star Trek: Armada" Gallery</a>
+            <span>
+            - A shrine for an old computer game I enjoyed.
+            </span>
+          </p>
+          <p>
+            <span class='pill body-pill'>Coffeescript </span>
+            <span class='pill body-pill'>Node.js</span>
+            <span class='pill body-pill'>Three.js</span>
+            <span class='pill body-pill'>WebGL</span>
+          </p>
+
+          <p>
+            <a href='https://hidden-wave-28675.herokuapp.com/dist/app.html'>Neoderelict</a>
+            <span>
+            - A simple prototype browser game.
+            </span>
+          </p>
+          <p>
+            <span class='pill body-pill'>Coffeescript </span>
+            <span class='pill body-pill'>Three.js</span>
+            <span class='pill body-pill'>WebGL</span>
+            <span class='pill body-pill'>Blender</span>
+          </p>
+        </div>
+      </div>
+      <div class='clearfix'></div>
+
+
+    </div> <!-- column -->
+
+    <p class='italic center'>References available on request</p>
 
   </div>
 
