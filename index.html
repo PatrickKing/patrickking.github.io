@@ -4,6 +4,7 @@
   <title>Patrick King - Resume</title>
   <meta charset="utf-8">
 
+  <script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
   <link rel="stylesheet" href="https://use.typekit.net/dal5psg.css">
   <style>
 
@@ -159,13 +160,13 @@
     <h1 class='center main-title'>Patrick King</h1>
     <p class='center'>Full-stack web developer in Ruby on Rails + React + Node.js</p>
 
-    <p class='center screen-only'><a href='Patrick_King_Resume_2018.pdf'>Resume PDF</a></p>
-
     <div class='contact-box'>
       <div class='pull-left contact-left'>
         <span class="italic">patrick.f.king@gmail.com</span>
         <br/>
         <span class="italic">(403) 922-4960</span>
+        <br/>
+        <span class="italic">This Resume: <a href="https://patrickking.github.io"> patrickking.github.io</a></span>
 
       </div>
 
@@ -182,7 +183,20 @@
 
     <div class='clearfix'></div>
 
-    <br/>
+
+    <div class='screen-only'>
+      <p class='center'>Filter this Resume:
+        <a id='focus-js' href='#'>Node + React</a> | 
+        <a id='focus-ruby' href='#'>Ruby on Rails</a> | 
+        <a id='focus-everything' href='#'>Everything</a>
+      </p>
+
+      <p class='center'>
+        <a class='resume-link filter-js hidden' href='Patrick_King_Resume_2018-node-react.pdf'>Resume PDF (Node + React)</a>
+        <a class='resume-link filter-ruby hidden' href='Patrick_King_Resume_2018-ruby-rails.pdf'>Resume PDF (Ruby on Rails)</a>
+        <a class='resume-link filter-everything' href='Patrick_King_Resume_2018-all.pdf'>Resume PDF</a>
+      </p>
+    </div>
 
     <div class='column'>
 
@@ -195,11 +209,11 @@
         <h2>Experience</h2>
 
 
-        <h3 class="bold">
+        <h3 class="bold filter-js filter-ruby filter-everything">
           VizworX Inc. - March 2013 to Present
         </h3>
 
-        <div>
+        <div class='filter-js filter-everything'>
           <p>
             <span class="italic">
               Unreleased NEB Data Visualization - 2017 to 2018
@@ -218,7 +232,7 @@
           </p>
         </div>
 
-        <div>
+        <div class='filter-js filter-everything'>
           <p>
             <span class="italic">
               <a href='https://apps2.neb-one.gc.ca/pipeline-incidents'>Pipeline Incidents</a> (NEB)
@@ -242,7 +256,7 @@
 
 
 
-        <div>
+        <div class='filter-js filter-everything'>
           <p>
             <span class="italic">
               <a href='https://apps2.neb-one.gc.ca/dvs'>Exploring Canada's Energy Future</a> (NEB)
@@ -265,7 +279,7 @@
         </div>
 
 
-        <div class='hidden'>
+        <div class='filter-ruby filter-everything'>
           <p>
             <span class="italic">Ivrnet Central - 2016</span>
           </p>
@@ -282,7 +296,7 @@
         </div>
 
 
-        <div>
+        <div class='filter-js filter-everything'>
           <p>
             <span class="italic">Geoviz - 2015 to 2016</span>
           </p>
@@ -303,7 +317,7 @@
 
 
 
-        <div class='hidden'>
+        <div  class='filter-ruby filter-everything'>
           <p>
             <span class="italic">WeEmploy - 2014</span>
           </p>
@@ -322,7 +336,7 @@
 
 
 
-        <div>
+        <div class='filter-ruby filter-js filter-everything'>
           <p>
             <span class="italic">Jobbsite - 2013 to 2015</span>
           </p>
@@ -344,12 +358,12 @@
         </div>
 
 
-        <h3 class="bold">
+        <h3 class="bold filter-js filter-ruby filter-everything">
           Agile Software Engineering Lab, University of Calgary (Dr. Frank Maurer) - May 2011 to February 2013
         </h3>
 
 
-        <div class='hidden'>
+        <div class='filter-ruby filter-everything'>
           <p>
             <span class="italic"><a href='https://web.archive.org/web/20161018145710/http://nserc-surfnet.ca/projects'>NSERC Surfnet Research Network Page</a> - 2013</span>
           </p>
@@ -365,7 +379,7 @@
         </div>
 
 
-        <div class='hidden'>
+        <div class='filter-everything'>
           <p>
             <span class="italic">MRI Table Kinect - 2012</span>
           </p>
@@ -381,7 +395,7 @@
         </div>
 
 
-        <div>
+        <div class='filter-js filter-everything'>
           <p>
             <span class="italic">Multi-Surface Environment API <a href="https://github.com/PatrickKing/MSEAPI">(Github)</a> - 2012</span>
 
@@ -399,23 +413,7 @@
         </div>
 
 
-
-
-        <!--         <p>
-          <span class="italic">TableNOC - 2011</span>
-          <span class='pill body-pill'>C# + WPF</span>
-          <span class='pill body-pill'>MySQL</span>
-          <span class='pill body-pill'>ArcGIS C# SDK</span>
-        </p>
-        <p>
-          <span class="italic">Role: Developer</span>
-        </p>
-        <p>
-          <span class="italic"> - Challenges:</span>
-        </p> -->
-
-
-        <div class='hidden'>
+        <div class='filter-everything'>
           <p>
             <span class="italic">eGrid - 2011</span>
           </p>
@@ -434,12 +432,12 @@
 
 
 
-        <h3 class="bold hidden">
+        <h3 class="bold filter-everything">
           University of Calgary iGEM Team - May to August 2009
         </h3>
 
 
-        <div class='hidden'>
+        <div class='filter-everything'>
           <p>
             <span class="italic"><a href='http://2009.igem.org/Team:Calgary/Second_Life'>Synthetic Biology Interactive (Second Life Installation)</a> </span>
           </p>
@@ -627,8 +625,34 @@
 
 
     <p class='italic center'>References available on request</p>
+    <p class='italic center screen-only'><a href='https://validator.w3.org/nu/?doc=https%3A%2F%2Fpatrickking.github.io%2Findex.html'>This resume is valid HTML</a></p>
 
   </div>
+
+
+  <script type="text/javascript">
+    
+    $('#focus-js').on('click', function (event) {
+      event.preventDefault()
+      $('.resume-link').addClass('hidden')
+      $('.filter-everything').addClass('hidden')
+      $('.filter-js').removeClass('hidden')
+    })
+
+    $('#focus-ruby').on('click', function (event) {
+      event.preventDefault()
+      $('.resume-link').addClass('hidden')
+      $('.filter-everything').addClass('hidden')
+      $('.filter-ruby').removeClass('hidden')
+    })
+
+    $('#focus-everything').on('click', function (event) {
+      event.preventDefault()
+      $('.resume-link').addClass('hidden')
+      $('.filter-everything').removeClass('hidden')
+    })
+
+  </script>
 
 </body>
 </html>
