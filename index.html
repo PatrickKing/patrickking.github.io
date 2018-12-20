@@ -15,6 +15,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 1.25;
+      background-color: #ddd;
     }
 
     * {
@@ -128,6 +129,9 @@
     .container {
       max-width: 1000px;
       margin: auto;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px
     }
 
     p {
@@ -153,19 +157,13 @@
         <span class="italic">patrick.f.king@gmail.com</span>
         <br/>
         <span class="italic">(403) 922-4960</span>
-        <br/>
-        <span class="italic">This Resume: <a href="https://patrickking.github.io"> patrickking.github.io</a></span>
-
       </div>
 
       <div class='pull-right contact-right'>
         <address>
-          307-1422 Centre A ST NE
-          <br/>
           Calgary, AB
-          <br/>
-          T2E 2Z9
         </address>
+        <span class="italic">This Resume: <a href="https://patrickking.github.io"> patrickking.github.io</a></span>
       </div>
     </div>
 
@@ -196,6 +194,35 @@
       <div class='section'>
         <h2>Experience</h2>
 
+        <h3 class="bold filter-ruby filter-everything">
+          Hacquity - Hacking Gender Equity Hackathon - May to Sept 2018
+        </h3>
+
+        <div class='filter-ruby filter-everything'>
+          <p>
+            <span class="italic">
+              DoM Citizen
+              <a href='https://github.com/PatrickKing/hacquity-apps'>(Github)</a>
+              2018
+            </span>
+          </p>
+          <p class='indent'>
+            <span class='pill body-pill'>Ruby on Rails</span>
+            <span class='pill body-pill'>Postgres SQL</span>
+            <span class='pill body-pill'>S3</span>
+            <span class='pill body-pill'>Google Docs API</span>
+            <span class='pill body-pill'>Email (Sendgrid + Mailgun)</span>
+            <span class='pill body-pill'>Heroku</span>
+          </p>
+          <p class='indent'>
+            <span class="italic">Role: Lead Developer - Challenges:</span>
+            As part of an extended hackathon I built DoM (Department of Medicine) Citizen, a prototype community portal for physicians in Calgary. This rails app has features for sharing and reviewing trusted service providers, uploading and searching resumes, and connecting with potential mentors. Trying my hand at some new cloud APIs was interesting, and as the webapp is part of a larger initiative to study barriers to gender equity in medicine, I had the opportunity to help facilitate a workshop about the site and present it to potential users there. Working alone to deliver some intricate features, I opted to limit complexity and simulate a single-page app experience with turbolinks. I built a fast and responsive site with virtually no javascript.
+          </p>
+        </div>
+
+
+
+
 
         <h3 class="bold filter-js filter-ruby filter-everything">
           VizworX Inc. - March 2013 to Present
@@ -204,10 +231,10 @@
         <div class='filter-js filter-everything'>
           <p>
             <span class="italic">
-              Unreleased NEB Data Visualization - 2017 to 2018
+              <a href='https://apps2.neb-one.gc.ca/imports-exports/'> Imports & Exports of Energy Products to and from Canada</a> NEB <a href='https://github.com/NEBGitHub/importations-exportations_imports-exports'>(Github)</a> - 2017 to 2018
             </span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>React.js</span>
             <span class='pill body-pill'>Immutable.js</span>
             <span class='pill body-pill'>Redux.js</span>
@@ -228,7 +255,7 @@
               2017
             </span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>React.js</span>
             <span class='pill body-pill'>Immutable.js</span>
             <span class='pill body-pill'>Redux.js</span>
@@ -252,7 +279,7 @@
               - 2016 to 2017
             </span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>Coffeescript</span>
             <span class='pill body-pill'>Browserify</span>
             <span class='pill body-pill'>D3.js</span>
@@ -271,7 +298,7 @@
           <p>
             <span class="italic">Ivrnet Central - 2016</span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>Ruby on Rails</span>
             <span class='pill body-pill'>Rspec</span>
             <span class='pill body-pill'>Docker</span>
@@ -288,7 +315,7 @@
           <p>
             <span class="italic">Geoviz - 2015 to 2016</span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>React.js</span>
             <span class='pill body-pill'>Flux.js</span>
             <span class='pill body-pill'>Leaflet</span>
@@ -309,7 +336,7 @@
           <p>
             <span class="italic">WeEmploy - 2014</span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>Ruby on Rails</span>
             <span class='pill body-pill'>Postgres SQL</span>
             <span class='pill body-pill'>Rspec</span>
@@ -328,7 +355,7 @@
           <p>
             <span class="italic">Jobbsite - 2013 to 2015</span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>Ruby on Rails</span>
             <span class='pill body-pill'>Postgres SQL</span>
             <span class='pill body-pill'>Rspec</span>
@@ -355,7 +382,7 @@
           <p>
             <span class="italic"><a href='https://web.archive.org/web/20161018145710/http://nserc-surfnet.ca/projects'>NSERC Surfnet Research Network Page</a> - 2013</span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>Ruby on Rails</span>
             <span class='pill body-pill'>Postgres SQL</span>
             <span class='pill body-pill'>Paperclip</span>
@@ -371,7 +398,7 @@
           <p>
             <span class="italic">MRI Table Kinect - 2012</span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>C# + WPF</span>
             <span class='pill body-pill'>Kinect</span>
             <span class='pill body-pill'>Objective-C + iOS</span>
@@ -388,7 +415,7 @@
             <span class="italic">Multi-Surface Environment API <a href="https://github.com/PatrickKing/MSEAPI">(Github)</a> - 2012</span>
 
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>C# + WPF</span>
             <span class='pill body-pill'>Kinect</span>
             <span class='pill body-pill'>Node.js</span>
@@ -405,7 +432,7 @@
           <p>
             <span class="italic">eGrid - 2011</span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>C# + WPF</span>
             <span class='pill body-pill'>ArcGIS C# SDK</span>
           </p>
@@ -429,7 +456,7 @@
           <p>
             <span class="italic"><a href='http://2009.igem.org/Team:Calgary/Second_Life'>Synthetic Biology Interactive (Second Life Installation)</a> </span>
           </p>
-          <p>
+          <p class='indent'>
             <span class='pill body-pill'>LSL (Second Life)</span>
           </p>
           <p class='indent'>
@@ -476,6 +503,8 @@
         <span class='pill best-pill'>Agile practices</span>
         <span class='pill best-pill'>jQuery</span>
         <span class='pill best-pill'>Promises + Bluebird.js</span>
+        <br/>
+        <br/>
 
         <div class='hidden'>
           
@@ -547,8 +576,13 @@
         <span class='pill good-pill'>ArcGIS (APIs + SDKs + server configuration)</span>
         <span class='pill good-pill'>Prawn</span>
         <span class='pill good-pill'>French (Written + Spoken)</span>
+        <br/>
+        <br/>
 
         <h3>What I've Played With</h3>
+        <span class='pill play-pill'>S3</span>
+        <span class='pill play-pill'>Google Docs API</span>
+        <span class='pill play-pill'>Email (Sendgrid + Mailgun)</span>
         <span class='pill play-pill'>Java + Android</span>
         <span class='pill play-pill'>Objective-C + iOS</span>
         <span class='pill play-pill'>Docker</span>
@@ -570,8 +604,9 @@
         <span class='pill play-pill'>Kinect</span>
         <span class='pill play-pill'>Blender</span>
         <span class='pill play-pill'>Selenium</span>
-
         <br/>
+        <br/>
+
       </div>
 
 
